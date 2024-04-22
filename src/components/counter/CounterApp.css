@@ -1,0 +1,106 @@
+
+button{
+    font-size:30px;
+    width:100px;
+    margin:10px;
+    color:white;
+    padding:15px;
+    border-radius:30px;
+    border-color: black;
+    border-width: 5px;
+}
+
+.counterButton{
+    background-color:#00a5ab;
+}
+
+.resetButton{
+    background-color:#0039ab;
+    width: max-content;
+}
+
+.count{
+    font-size: 150px;
+    padding: 20px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* H2104 */
+.h2104 {
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    border-radius: 15px;
+}
+
+.slideshow-container {
+    background-color: #0039ab7f;
+    color: #2859ba;
+    position: relative;
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fade 5s forwards;
+}
+
+.slide.active {
+    display: block;
+    animation: fade 8s forwards;
+}
+
+@keyframes fade {
+    0%, 100%{
+        opacity: 0;
+    }
+ 
+    5% , 50%, 95%{
+        opacity: 1;
+    }
+
+}
+
+.empty{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    background-color: black;
+}
+
+
+.text {
+    position: absolute;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px; 
+    text-align: center;
+    padding: 10px 20px; 
+}
